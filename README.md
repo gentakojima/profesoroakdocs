@@ -2,7 +2,15 @@
 
 Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak para Telegram. La documentación aún está muy incompleta.
 
-## Configuración básica del canal
+## Índice
+
+1. [Configuración básica del canal](#section1)
+ 1. [Ver configuración actual](#secion11)
+ 2. [Configuración rápida](#section12)
+ 3. [Configuración avanzada](#section13)
+ 4. [Configuración fina](#section14)
+
+## Configuración básica del canal<a name="section1">
 
 ### Ver configuración actual
 
@@ -24,9 +32,9 @@ Hay diversos tipos de configuraciones rápidas que se pueden aplicar a un canal.
 | `silenciosa` | Como la inicial, pero no permite bromas, ni pole, ni Pokégram. |
 | `exclusiva` | Como la inicial, pero no permite bromas, ni pole, ni Pokégram. No permite entrar a ningún tipo de usuario problemático, ni usuarios sin registrar ni validar. |
 
-### Configuración fina
+### Configuración avanzada
 
-Una vez establecido un modo inicial, puedes cambiar las opciones una a una para dejarlo a tu gusto. Todos estos comandos que aceptan el parámetro `on`, tienen el efecto contrario con el parámetro `off`.
+Una vez establecido un modo de partida, puedes cambiar las opciones una a una para dejarlo a tu gusto. Todos estos comandos que aceptan el parámetro `on`, tienen el efecto contrario con el parámetro `off`.
 
 | Comando | Descripción |
 |---------|-------------|
@@ -39,7 +47,7 @@ Una vez establecido un modo inicial, puedes cambiar las opciones una a una para 
 | `/set require_verified_kick on` | Activa la expulsión automática a quien no esté validado |
 | `/set shutup on` | Activa el modo silencioso |
 
-### Lista negra
+### Lista negra de usuarios
 
 Los usuarios pueden estar marcados con distintos _flags_ que aparecerán al preguntar a Oak quién es un usuario. Los flags existentes son los siguientes:
 
