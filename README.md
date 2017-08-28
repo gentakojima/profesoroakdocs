@@ -12,7 +12,7 @@ Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak par
 
 ## Configuración básica del canal<a name="section1">
 
-### Ver configuración actual
+### Ver configuración actual<a name="section11">
 
 Hay dos comandos básicos para ver la configuración actual de Oak en el canal. Generalmente, hace falta usar ambos para conocer el estado actual.
 
@@ -21,7 +21,7 @@ Hay dos comandos básicos para ver la configuración actual de Oak en el canal. 
 | `Oak, Configuración actual` | Muestra la configuración en un formato dirigido a usuarios, con iconos |
 | `Oak, qué tienes activado?` | Muestra la configuración en un formato dirigido a admins |
 
-### Configuración rápida
+### Configuración rápida<a name="section12">
 
 Hay diversos tipos de configuraciones rápidas que se pueden aplicar a un canal. Para aplicarlas, hay que usar el comando `Oak, configuración <TIPO>`. Por ejemplo, `Oak, configuración divertida`.
 
@@ -32,7 +32,7 @@ Hay diversos tipos de configuraciones rápidas que se pueden aplicar a un canal.
 | `silenciosa` | Como la inicial, pero no permite bromas, ni pole, ni Pokégram. |
 | `exclusiva` | Como la inicial, pero no permite bromas, ni pole, ni Pokégram. No permite entrar a ningún tipo de usuario problemático, ni usuarios sin registrar ni validar. |
 
-### Configuración avanzada
+### Configuración avanzada<a name="section13">
 
 Una vez establecido un modo de partida, puedes cambiar las opciones una a una para dejarlo a tu gusto. Todos estos comandos que aceptan el parámetro `on`, tienen el efecto contrario con el parámetro `off`.
 
@@ -47,7 +47,7 @@ Una vez establecido un modo de partida, puedes cambiar las opciones una a una pa
 | `/set require_verified_kick on` | Activa la expulsión automática a quien no esté validado |
 | `/set shutup on` | Activa el modo silencioso |
 
-### Lista negra de usuarios
+### Lista negra de usuarios<a name="section14">
 
 Los usuarios pueden estar marcados con distintos _flags_ que aparecerán al preguntar a Oak quién es un usuario. Los flags existentes son los siguientes:
 
