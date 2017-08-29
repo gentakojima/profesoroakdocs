@@ -8,7 +8,7 @@ Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak par
     1. [Ver configuración actual](#secion11)
     2. [Configuración rápida](#section12)
     3. [Configuración avanzada](#section13)
-    4. [Configuración fina](#section14)
+    4. [Lista negra de usuarios](#section14)
 
 ## Configuración básica del canal<a name="section1">
 
