@@ -30,7 +30,7 @@ Hay diversos tipos de configuraciones rápidas que se pueden aplicar a un canal.
 | `inicial`    | La configuración por defecto. Saluda a los nuevos usuarios, está en modo silencioso, permite bromas, pole y Pokégram, pero no permite juegos. No permite entrar a algunos usuarios problemáticos. |
 | `divertida`  | Como la inicial, pero permite juegos y permite entrar a todos los usuarios. |
 | `silenciosa` | Como la inicial, pero no permite bromas, ni pole, ni Pokégram. |
-| `exclusiva` | Como la inicial, pero no permite bromas, ni pole, ni Pokégram. No permite entrar a ningún tipo de usuario problemático, ni usuarios sin registrar ni validar. |
+| `exclusiva` | Como la silenciosa, pero no permite entrar a ningún tipo de usuario problemático, ni usuarios sin registrar ni validar. |
 
 ### Configuración avanzada<a name="section13">
 
