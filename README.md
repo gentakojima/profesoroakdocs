@@ -86,11 +86,11 @@ Un **grupo de administración** permite recibir las notificaciones de quién ent
 
 1. Crea un grupo nuevo y conviértelo en supergrupo, manteniéndolo privado. Este será el **grupo de administración**.
 2. Invita al menos a cuatro personas más. Es necesario, porque sino Oak no querrá quedarse en el grupo.
-3. Invita al grupo de administración a ``@profesoroak_bot` y comprueba que saluda a la gente. Hazlo administrador del grupo.
-4. Escribe `oak, dónde estoy?` y recibirás el identificador numérico del canal (¡ojo, puede ser un número negativo, es normal!). Si no funciona, puedes invitar al canal a ``@groupinfobot` que hace la misma función.
+3. Invita al grupo de administración a `@profesoroak_bot` y comprueba que saluda a la gente. Hazlo administrador del grupo.
+4. Escribe `oak, dónde estoy?` y recibirás el identificador numérico del canal (¡ojo, puede ser un número negativo, es normal!). Si no funciona, puedes invitar al canal a `@groupinfobot` que hace la misma función.
 5. En el grupo normal (no en el grupo de administración) escribe `/set admin_chat ID`, siendo `ID` el identificador del paso anterior.
 
-Si lo has hecho bien, al [comprobar la configuración actual](#secion11) en el grupo normal Oak te dirá que conoce el grupo administrativo.
+Si lo has hecho bien, al [comprobar la configuración actual](#section11) en el grupo normal Oak te dirá que conoce el grupo administrativo.
 
 ## Organización de incursiones<a name="section2">
 
@@ -115,17 +115,20 @@ Los siguientes mensajes **no funcionarán**:
 
 ## Lista de nidos<a name="section3">
 
-Oak mantiene una lista de nidos que se reinicia automáticamente cuando esté previsto que cambian los nidos (tradicionalmente, la madrugada del miércoles al jueves cada dos semanas).
+Oak mantiene una lista de nidos de Pokémon. Para añadir un nido a la lista, escribe `confirmar nido de Scyther en la alameda`.
 
-Para añadir un nido a la lista, escribe `confirmar nido de Scyther en la alameda`.
-
-Para consultar los Pokémon que están en la lista, escribe `lista de nidos`. Puedes preguntar por un Pokémon en concreto, por ejemplo: `dónde hay scyther?` o `dónde sale scyther?`.
+Para consultar los Pokémon que están en la lista, escribe `lista de nidos`. Puedes preguntar por un Pokémon en concreto, por ejemplo: `dónde hay scyther?` o `dónde sale scyther?`. Es obligatorio poner la **interrogación al final**.
 
 También puedes preguntar la lista completa con sus localizaciones, escribiendo `lista completa de nidos`.
+
+Puedes borrar un nido escribiendo `borrar nido de Scyther en la alameda`.
+
+La lista **se reinicia automáticamente** cuando esté previsto que cambian los nidos (tradicionalmente, la madrugada del miércoles al jueves cada dos semanas).
 
 | Comando | Descripción |
 |---------|-------------|
 | `confirmar nido de POKEMON en LUGAR` | Añade a la lista de nidos conocidos el `POKEMON` en `LUGAR` |
+| `borrar nido de POKEMON en LUGAR` | Borra de la lista de nidos conocidos el `POKEMON` en `LUGAR` |
 | `dónde hay POKEMON?`     | Pregunta la localización del nido del `POKEMON` |
 | `lista de nidos`     | Pregunta la lista de Pokémon añadidos |
 | `lista de nidos completa`     | Pregunta la lista completa de Pokémon añadidos con sus localizaciones |
