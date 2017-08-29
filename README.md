@@ -80,6 +80,12 @@ Si tienes activado el **mensaje de bienvenida** ([ver configuración avanzada](#
 
 De la misma forma, puedes cambiar las **normas del grupo** escribiendo `cambiar las normas`. Los usuarios podrán consultarlas escribiendo `normas del grupo`.
 
+| Comando | Descripción |
+|---------|-------------|
+| `editar mensaje de bienvenida` | Permite cambiar el mensaje de bienvenida |
+| `cambiar las normas` | Permite cambiar las normas del grupo |
+| `normas del grupo` | Permite consultar las normas del grupo |
+
 ### Grupo de administración<a name="section16">
 
 Un **grupo de administración** permite recibir las notificaciones de quién entra o sale de un canal, quién dice palabras prohibidas, o quién es kickeado. También permite introducir algunos comandos que afectarán al grupo relacionado, por ejemplo, [cambiar el saludo o las normas](#section15).
