@@ -129,7 +129,7 @@ También puedes preguntar la lista completa con sus localizaciones, escribiendo 
 
 Puedes borrar un nido escribiendo `borrar nido de Scyther en la alameda`.
 
-La lista **se reinicia automáticamente** cuando esté previsto que cambian los nidos (tradicionalmente, la madrugada del miércoles al jueves cada dos semanas).
+La lista **se reinicia automáticamente** cuando esté previsto que cambien los nidos (tradicionalmente, la madrugada del miércoles al jueves cada dos semanas).
 
 | Comando | Descripción |
 |---------|-------------|
