@@ -97,15 +97,15 @@ Los **grupos exclusivos de Color** permiten mantener conversaciones de equipos p
 Para crear grupos exclusivos de color debes seguir los siguientes pasos:
 
 1. Crea un grupo nuevo y conviértelo en supergrupo, manteniéndolo privado. Este será el **grupo exclusivo de color**.
-2. Invitar al menos a 4 personas más (del color del equipo correspondiente). Es necesario, porque sino Oak no querrá quedarse en el grupo.
+2. Invita al menos a cuatro personas más (del color del equipo correspondiente). Es necesario, porque sino Oak no querrá quedarse en el grupo.
 3. Invita al grupo exclusivo a `@profesoroak_bot` y comprueba que saluda a la gente. Hazlo administrador del grupo.
 4. Escribe `Oak, configuracion exclusiva`. Debería aparecer junto al resto de la configuración `Grupo de color detectado ❤️` con el color del corazón correspondiente el equipo.
 5. Desde las opciones del grupo, crea un enlace para invitar al grupo si no lo tiene aún y extrae la parte después de la última barra. Por ejemplo, si el enlace es `https://t.me/joinchat/XFIXXEMXXV5xLeqXXXXX` debes quedarte con `XFIXXEMXXV5xLeqXXXXX`.
 6. En el grupo exclusivo, pon `/set link_chat XFIXXEMXXV5xLeqXXXXX` para comunicar a Oak el enlace del grupo, poniendo la parte del enlace correcta. Debería aparecer junto al resto de la configuración: `✅ Link del grupo privado`.
 7. En el grupo exclusivo, escribe el comando `crear unión del grupo` y Oak te enviará por privado un mensaje como este: `Unir grupo 0000MTAwMTEz00000000ODoyMD0000NzE6NT0000==`.
-10. En el grupo general, pega ese mensaje y Oak contestará `¡Grupo emparejado correctamente!`.
+10. En el grupo general, un administrador debe pegar ese mensaje y Oak contestará `¡Grupo emparejado correctamente!`.
 
-Debes repetir este proceso para cada uno de los grupos de color. Los pasos del 1 al 7 puede hacerlos la persona que cree el grupo de color y después puede pasarle el mensaje para emparejar el grupo al administrador del grupo general para que realice el último paso.
+Puedes repetir este proceso para cada uno de los grupos de color. Los pasos del 1 al 7 puede hacerlos la persona que cree el grupo de color y después puede pasarle el mensaje para emparejar el grupo al administrador del grupo general para que realice el último paso.
 
 Si preguntas `Oak, link del grupo COLOR` (por ejemplo `Oak, link del grupo rojo`) Oak enviará el enlace por privado. (Nota: actualmente no están llegando los enlaces por el bug duhow/ProfesorOak#314).
 
