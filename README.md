@@ -64,9 +64,9 @@ Los usuarios pueden estar marcados con distintos _flags_ que aparecerán al preg
 | `spam` | 📨 | Spammer por poner enlaces sin hablar antes en un canal | `inicial` `silenciosa` `exclusiva` |
 | `rager` | 🔥 | Violento | `inicial` `silenciosa` `exclusiva` |
 | `troll` | ? | Troll | `inicial` `silenciosa` `exclusiva` |
-| `gps` | ? | ? | `exclusiva` |
+| `gps` | 📡 | ? | `exclusiva` |
 | `hacks` | ? | Utiliza hacks o trampas en el juego | `exclusiva` |
-| `fly` | ? | Utiliza fly en el juego | `exclusiva` |
+| `fly` | 🕹 | Utiliza fly en el juego | `exclusiva` |
 | `bot` | 🤖 | Utiliza bots en el juego | `exclusiva` |
 
 Se puede establecer una lista negra personalizada con el comando `/blacklist`, por ejemplo:
