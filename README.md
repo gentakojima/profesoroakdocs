@@ -4,17 +4,19 @@ Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak par
 
 ## Índice
 
-1. [Configuración del canal](#section1)
+1. [Configuración del grupo](#section1)
     1. [Ver configuración actual](#secion11)
     2. [Configuración rápida](#section12)
     3. [Configuración avanzada](#section13)
     4. [Lista negra de usuarios](#section14)
     5. [Saludo y normas del grupo](#section15)
-    6. [Grupo de administración](#section16)
-2. [Organización de incursiones](#section2)
-3. [Lista de nidos](#section3)
+2. [Grupos relacionados](#section2)
+    1. [Grupos exclusivos de color](#section21)
+    2. [Grupo de administración](#section22)
+3. [Organización de incursiones](#section3)
+4. [Lista de nidos](#section4)
 
-## Configuración del canal<a name="section1">
+## Configuración del grupo<a name="section1">
 
 ### Ver configuración actual<a name="section11">
 
@@ -86,9 +88,32 @@ De la misma forma, puedes cambiar las **normas del grupo** escribiendo `cambiar 
 | `cambiar las normas` | Permite cambiar las normas del grupo |
 | `normas del grupo` | Permite consultar las normas del grupo |
 
-### Grupo de administración<a name="section16">
+## Grupos relacionados<a name="section2">
+
+### Grupos exclusivos de color<a name="section21">
+
+Los **grupos exclusivos de Color** permiten mantener conversaciones de equipos privadas para el resto de los jugadores, lo que viene muy bien a la hora de organizarse por equipos.
+
+Para crear grupos exclusivos de color debes seguir los siguientes pasos:
+
+1. Crea un grupo nuevo y conviértelo en supergrupo, manteniéndolo privado. Este será el **grupo exclusivo de color**.
+2. Invitar al menos a 4 personas más (del color del equipo correspondiente). Es necesario, porque sino Oak no querrá quedarse en el grupo.
+3. Invita al grupo exclusivo a `@profesoroak_bot` y comprueba que saluda a la gente. Hazlo administrador del grupo.
+4. Escribe `Oak, configuracion exclusiva`. Debería aparecer junto al resto de la configuración `Grupo de color detectado ❤️` con el color del corazón correspondiente el equipo.
+5. Desde las opciones del grupo, crea un enlace para invitar al grupo si no lo tiene aún y extrae la parte después de la última barra. Por ejemplo, si el enlace es `https://t.me/joinchat/XFIXXEMXXV5xLeqXXXXX` debes quedarte con `XFIXXEMXXV5xLeqXXXXX`.
+6. En el grupo exclusivo, pon `/set link_chat XFIXXEMXXV5xLeqXXXXX` para comunicar a Oak el enlace del grupo, poniendo la parte del enlace correcta. Debería aparecer junto al resto de la configuración: `✅ Link del grupo privado`.
+7. En el grupo exclusivo, escribe el comando `crear unión del grupo` y Oak te enviará por privado un mensaje como este: `Unir grupo 0000MTAwMTEz00000000ODoyMD0000NzE6NT0000==`.
+10. En el grupo general, pega ese mensaje y Oak contestará `¡Grupo emparejado correctamente!`.
+
+Debes repetir este proceso para cada uno de los grupos de color. Los pasos del 1 al 7 puede hacerlos la persona que cree el grupo de color y después puede pasarle el mensaje para emparejar el grupo al administrador del grupo general para que realice el último paso.
+
+Si preguntas `Oak, link del grupo COLOR` (por ejemplo `Oak, link del grupo rojo`) Oak enviará el enlace por privado. (Nota: actualmente no están llegando los enlaces por el bug duhow/ProfesorOak#314).
+
+### Grupo de administración<a name="section22">
 
 Un **grupo de administración** permite recibir las notificaciones de quién entra o sale de un canal, quién dice palabras prohibidas, o quién es kickeado. También permite introducir algunos comandos que afectarán al grupo relacionado, por ejemplo, [cambiar el saludo o las normas](#section15).
+
+Para crear un grupo de administración debes seguir los siguientes pasos:
 
 1. Crea un grupo nuevo y conviértelo en supergrupo, manteniéndolo privado. Este será el **grupo de administración**.
 2. Invita al menos a cuatro personas más. Es necesario, porque sino Oak no querrá quedarse en el grupo.
@@ -98,7 +123,7 @@ Un **grupo de administración** permite recibir las notificaciones de quién ent
 
 Si lo has hecho bien, al [comprobar la configuración actual](#section11) en el grupo normal Oak te dirá que conoce el grupo administrativo.
 
-## Organización de incursiones<a name="section2">
+## Organización de incursiones<a name="section3">
 
 Para organizar una incursión, escribe un mensaje como el siguiente:
 `Crear incursión de Lapras a las 14:30 en Un lugar muy especial` o `Crear raid de Lapras a las 14:30 en Un lugar muy especial`.
@@ -119,7 +144,7 @@ Los siguientes mensajes **no funcionarán**:
  |--------------------------------------------------|-------------|
  | `crear incursión de POKEMON a las HORA en LUGAR` | Crea la incursión de `POKEMON` a las `HORA` (obligatorio formato _XX:XX_) en `LUGAR` |
 
-## Lista de nidos<a name="section3">
+## Lista de nidos<a name="section4">
 
 Oak mantiene una lista de nidos de Pokémon. Para añadir un nido a la lista, escribe `confirmar nido de Scyther en la alameda`.
 
