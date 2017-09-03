@@ -72,7 +72,7 @@ Los usuarios registrados pueden estar marcados con distintos _flags_ que aparece
 |---------|-------------|----|-------------------------|
 | `spam` | 📨 | Spammer por poner enlaces sin hablar antes en un canal | `inicial` `silenciosa` `exclusiva` |
 | `rager` | 🔥 | Violento | `inicial` `silenciosa` `exclusiva` |
-| `troll` | ? | Troll | `inicial` `silenciosa` `exclusiva` |
+| `troll` | 👺 | Troll | `inicial` `silenciosa` `exclusiva` |
 | `gps` | 📡 | ? | `exclusiva` |
 | `hacks` | 💻 | Utiliza hacks o trampas en el juego | `exclusiva` |
 | `fly` | 🕹 | Utiliza fly en el juego | `exclusiva` |
@@ -251,21 +251,19 @@ Todos estos comandos son potencialmente destructivos, así que **requieren una a
 Para organizar una incursión, escribe un mensaje como el siguiente:
 `Crear incursión de Lapras a las 14:30 en Un lugar muy especial` o `Crear raid de Lapras a las 14:30 en Un lugar muy especial`.
 
-Si lo has escrito realmente bien y Oak es administrador del canal, además borrará el mensaje original del usuario, de forma que solo quedará el mensaje con la lista de apuntados.
+Si lo has escrito bien y Oak es administrador del canal, además borrará el mensaje original del usuario, de forma que solo quedará el mensaje con la lista de apuntados.
 
 Los usuarios pueden entonces apuntarse pulsando una vez en el botón `¡Me apunto!`, retirarse volviendo a pulsar una segunda vez, o avisar de que ya están pulsando en el botón `¡Ya estoy!`.
 
 Los siguientes mensajes **no funcionarán**:
 
  - `Crear incursión de Lepras a las 14:30 en Un lugar muy especial` _(el nombre del Pokémon está mal escrito)_
- - `Crear incursión de Lapras a las 14.30 en Un lugar muy especial` _(la hora no está escrita en el formato correcto, debe escribirse con dos puntos)_
- - `Nueva incursión de Lapras a las 14:30 en Un lugar muy especial` _(hay que poner **crear**, no **nueva**)_
  - `Crear incursión Lapras 14:30 en Un lugar muy especial` _(faltan conectores en la frase)_
 
 
  | Comando                                          | Descripción |
  |--------------------------------------------------|-------------|
- | `crear incursión de POKEMON a las HORA en LUGAR` | Crea la incursión de `POKEMON` a las `HORA` (obligatorio formato _XX:XX_) en `LUGAR` |
+ | `crear incursión de POKEMON a las HORA en LUGAR` | Crea la incursión de `POKEMON` a las `HORA` en `LUGAR` |
 
 ### Lista de nidos<a name="section52">
 
