@@ -219,7 +219,7 @@ Los tres comandos `/kick`, `/ban` y `/unban` pueden aplicarse contestando a un m
 
 ### Echar a grupos de usuarios<a name="section42">
 
-Se pueden echar a grupos de usuarios en función de varios criterios que tiene definidos. Algunos de estos comandos reciben parámetros:
+Se pueden echar a grupos de usuarios en función de varios criterios predefinidos. Algunos de estos comandos reciben parámetros:
 
 | Comando | Descripción |
 | ------- | ------------|
