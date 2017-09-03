@@ -76,8 +76,8 @@ Los usuarios registrados pueden estar marcados con distintos _flags_ que aparece
 | `hacks` | 💻 | Utiliza hacks o trampas en el juego | `exclusiva` |
 | `fly` | 🕹 | Utiliza fly en el juego | `exclusiva` |
 | `bot` | 🤖 | Utiliza bots en el juego | `exclusiva` |
-| `multiaccount` | 👥 | Utiliza multicuenta en el juego | `exclusiva` |
-| `ratkid` | 🐀 | Se considera un _niño rata_ | `exclusiva` |
+| `multiaccount` | 👥 | Utiliza multicuenta en el juego | |
+| `ratkid` | 🐀 | Se considera un _niño rata_ |  |
 
 Se puede establecer una lista negra personalizada con el comando `/blacklist`, por ejemplo:
 
