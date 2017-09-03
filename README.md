@@ -16,6 +16,7 @@ Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak par
 3. [Registro y validación de usuarios](#section3)
     1. [Estados de los usuarios](#section31)
     2. [Registro](#section32)
+     1. [Registro offline](#section321)
     3. [Validación](#section33)
 4. [Moderación de usuarios](#section4)
     1. [Echar o banear a un usuario](#section41)
@@ -162,11 +163,23 @@ Acompañando, pueden encontrarse además distintos _flags_ en forma de emojis as
 | `enlightened` | 🐸 | Pertenece al equipo Iluminados en Ingress |
 | `resistance` | 🗝 | Pertenece al equipo Resistencia en Ingress |
 
+Todos estos _flags_ solo los pueden poner administradores del Profesor Oak por petición expresa.
+
 ### Registro<a name="section32">
 
 Al entrar un usuario nuevo al canal que no esté registrado, Oak le preguntará por este orden de qué equipo es y cómo se llama en el juego. Si contesta correctamente, estará ya registrado y podrá comenzar la [validación](#section33).
 
 Si no lo ha completado correctamente en su momento, debe [hablar con Oak por privado](https://t.me/profesoroak_bot) y usar el comando `/register` para completar el registro.
+
+#### Registro offline<a name="section321">
+
+El registro _offline_ sirve para indicar a Oak el nombre, equipo y nivel de un usuario de Pokémon GO que no consta en Telegram.
+
+| Comando | Descripción |
+|---------|-------------|
+| `/regoff NOMBRE EQUIPO NIVEL ` | Registra offline a un usuario que no consta en Telegram. Se debe indicar el `NOMBRE` de usuario de Pokémon GO, el `EQUIPO` (`R` para rojo, `B` para azul o `Y` para amarillo) y el nivel. Por ejemplo, `/regoff ProfesorOak Y 38` |
+
+Se puede subir el nivel volviendo a poner el mismo comando con el nuevo nivel. No se puede bajar el nivel ni se puede cambiar el equipo.
 
 ### Validación<a name="section33">
 
@@ -174,7 +187,7 @@ Los usuarios registrados pueden validarse. Los usuarios no registrados deben [re
 
 El usuario debe [hablar con Oak por privado](https://t.me/profesoroak_bot) y decir `Quiero validarme` y seguir los pasos. Deberá completar la información que solicite y después enviar una captura del juego según sus indicaciones.
 
-El proceso de validación puede tardar varias horas. Tambnién es posible que en ese momento la cola de moderación esté saturada y recibas un mensaje de que no es posible validarse en ese momento. En ese caso, debe volver a intentarse en unas horas.
+El proceso de validación puede tardar varias horas. También es posible que en ese momento la cola de moderación esté saturada y recibas un mensaje de que no es posible validarse en ese momento. En ese caso, debe volver a intentarse en unas horas.
 
 ### Subir de nivel<a name="section34">
 
@@ -191,7 +204,7 @@ Para registrar las **medallas del juego** hay que decirle a Oak por privado `Reg
 1. Enviar una captura de pantalla de la medalla como una imagen (no como archivo) y esperar a que la reconozca.
 2. Comprobar que reconoce la medalla correcta. Si reconoce la medalla incorrecta o no reconoce ninguna medalla, se puede probar a hacer la captura de nuevo.
 3. Cuando lo solicite, escribir los puntos actuales de la medalla, sin puntos ni comas de separación en los miles, por ejemplo: `3480`.
-4. Cuand conteste que está guardada, se pueden seguir enviando más medallas siguiendo los pasos 2 y 3 o decir `Listo` cuando se haya terminado.
+4. Cuando conteste que está guardada, se pueden seguir enviando más medallas siguiendo los pasos 2 y 3 o decir `Listo` cuando se haya terminado.
 
 Para registrar la **experiencia total**, se debe enviar como imagen una captura de la parte inferior del perfil del juego donde se vea el número total de experiencia (`TOTAL XP`). Una vez enviada, hay que contestar a ese mensaje con el comando `/exp` para que Oak reconozca el número de experiencia total.
 
