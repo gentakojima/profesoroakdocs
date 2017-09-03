@@ -13,8 +13,16 @@ Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak par
 2. [Grupos relacionados](#section2)
     1. [Grupos exclusivos de color](#section21)
     2. [Grupo de administración](#section22)
-3. [Organización de incursiones](#section3)
-4. [Lista de nidos](#section4)
+3. [Registro y validación de usuarios](#section3)
+    1. [Estados de los usuarios](#section31)
+    2. [Registro](#section32)
+    3. [Validación](#section33)
+4. [Moderación de usuarios](#section4)
+    1. [Echar o banear a un usuario](#section41)
+    2. [Echar a grupos de usuarios](#section42)
+5. [Utilidades de Oak para usuarios](#section5)
+    1. [Organización de incursiones](#section51)
+    2. [Lista de nidos](#section52)
 
 ## Configuración del grupo<a name="section1">
 
@@ -57,7 +65,7 @@ Oak no contesta nada cuando pones estos comandos. Tras ponerlos, vuelve a [compr
 
 ### Lista negra de usuarios<a name="section14">
 
-Los usuarios pueden estar marcados con distintos _flags_ que aparecerán al preguntar a Oak quién es un usuario. Los flags existentes son los siguientes:
+Los usuarios registrados pueden estar marcados con distintos _flags_ que aparecerán al preguntar a Oak quién es un usuario. Los flags existentes son los siguientes:
 
 | Flag | Emoji | Descripción | Restringido en configuraciones rápidas |
 |---------|-------------|----|-------------------------|
@@ -65,9 +73,11 @@ Los usuarios pueden estar marcados con distintos _flags_ que aparecerán al preg
 | `rager` | 🔥 | Violento | `inicial` `silenciosa` `exclusiva` |
 | `troll` | ? | Troll | `inicial` `silenciosa` `exclusiva` |
 | `gps` | 📡 | ? | `exclusiva` |
-| `hacks` | ? | Utiliza hacks o trampas en el juego | `exclusiva` |
+| `hacks` | 💻 | Utiliza hacks o trampas en el juego | `exclusiva` |
 | `fly` | 🕹 | Utiliza fly en el juego | `exclusiva` |
 | `bot` | 🤖 | Utiliza bots en el juego | `exclusiva` |
+| `multiaccount` | 👥 | Utiliza multicuenta en el juego | `exclusiva` |
+| `ratkid` | 🐀 | Se considera un _niño rata_ | `exclusiva` |
 
 Se puede establecer una lista negra personalizada con el comando `/blacklist`, por ejemplo:
 
@@ -123,7 +133,107 @@ Para crear un grupo de administración debes seguir los siguientes pasos:
 
 Si lo has hecho bien, al [comprobar la configuración actual](#section11) en el grupo normal Oak te dirá que conoce el grupo administrativo.
 
-## Organización de incursiones<a name="section3">
+## Registro y validación de usuarios<a name="section3">
+
+### Estados de los usuarios<a name="section31">
+
+Los usuarios de Telegram pueden estar registrados o no registrados. Una vez registrados, pueden estar validados o no validados. Dependiendo de la [configuración del grupo](#section1), puedes obligar a que la gente se registre y se valide para permanecer en el canal.
+
+Para ver el estado de un usuario, puedes contestar a un mensaje de ese usuario preguntando `quién es?`. También puedes redirigir un mensaje de ese usuario y contestar a ese mensaje redirigido, para preguntarle a Oak por privado. Por último, puedes preguntar usando el ID numérico de Telegram, por ejemplo, `quién es 201760961?`.
+
+Las posibles contestaciones de Oak son:
+
+| Contestación | Estado | Descripción |
+|--------------|--------| -------------|
+| `No sé quién es 201760961` | No registrado | El usuario no está registrado en Oak. Debe [registrarse](#section32). |
+| `No sé como se llama, sólo sé que es Amarillo L1. ⚠️` | Registro parcial | Oak le ha preguntado de qué equipo es al entrar en un canal, ha contestado, pero cuando le ha preguntado por el nombre en el juego no lo ha hecho. También debe [registrarse](#section32). |
+| `@PokemonPlayer, es Azul L34. ⚠️` | No validado | Está registrado, pero no validado. Debe [validarse](#section33). |
+| `@PokemonPlayer, es Azul L34. ⚠️🕑` | En proceso de validación | Está registrado y está en proceso de validación. Debe esperar a que un moderador lo valide o lo rechace.. |
+| `@PokemonPlayer, es Azul L34. ✅` | Validado | Está registrado y está en proceso de validación. Debe esperar a que un moderador lo valide o lo rechace. |
+
+Acompañando, pueden encontrarse además distintos _flags_ en forma de emojis asociados a usuarios problemáticos o tramposos (ver sección [lista negra de usuarios](#section14)) o algunos otros:
+
+| Flag | Emoji | Descripción |
+|---------|-------------|----|
+| `donator` | 💶 | Ha hecho una donación al creador del Profesor Oak |
+| `authorized` | ⭐️ | Es administrador del Profesor Oak |
+| `helper` | 🔰 | Es un ayudante oficial del Profesor Oak |
+| `gay` | 🏳️‍🌈 | Es un ayudante oficial del Profesor Oak |
+| `enlightened` | 🐸 | Pertenece al equipo Iluminados en Ingress |
+| `resistance` | 🗝 | Pertenece al equipo Resistencia en Ingress |
+
+### Registro<a name="section32">
+
+Al entrar un usuario nuevo al canal que no esté registrado, Oak le preguntará por este orden de qué equipo es y cómo se llama en el juego. Si lo hace correctamente, estará ya registrado y podrá comenzar la [validación](#section33).
+
+Si no lo has hecho o completado correctamente en su momento, debes hablar con Oak por privado y usar el comando `/register` para completar el registro.
+
+### Validación<a name="section33">
+
+Los usuarios registrados pueden validarse. Los usuarios no registrados deben [registrarse antes](#section32).
+
+Debes hablar con Oak por privado y decir `Quiero validarme` y seguir los pasos. Deberás completar la información de tu nivel y después enviarle una captura del juego según sus indicaciones.
+
+El proceso de validación puede tardar varias horas, así que ten paciencia. Es posible que en ese momento la cola de moderación esté saturada y recibas un mensaje de que
+
+### Subir de nivel<a name="section34">
+
+Para comunicar a Oak que has subido de nivel puedes decirle por privado `Oak, ya soy nivel 32`. Para confirmar que lo ha entendido, pregunta `Oak, quién soy?`.
+
+A partir del nivel 35 es obligatorio enviar una captura de pantalla del perfil para certificar que has subido de nivel. Oak te la pedirá, pero si no lo hace y no subes de nivel al preguntarle `Quién soy?`, envíasela igualmente.
+
+### Registrar medallas y experiencia<a name="section35">
+
+Las medallas y experiencia serán visibles en tu perfil público del Profesor Oak, que puede consultar cualquiera preguntando al Profesor Oak quién eres.
+
+Para registrar las **medallas del juego** dile a Oak por privado `Registrar medallas`. Una vez te conteste, recibirás instrucciones sobre cómo hacerlo:
+
+1. Envía una captura de pantalla de la medalla como una imagen (no como archivo) y espera a que la reconozca.
+2. Comprueba que reconoce la medalla correcta. Si reconoce la medalla incorrecta o no reconoce ninguna medalla, prueba a hacer la captura de nuevo.
+3. Cuando te lo solicite, escribe los puntos actuales de la medalla sin puntos ni comas de separación en los miles, por ejemplo: `3480`.
+4. Cuando te conteste que está guardada, puedes seguir enviando más medallas siguiendo los pasos 2 y 3 o, cuando acabes, decir `Listo`.
+
+Para registrar la **experiencia total**, debes enviar como imagen una captura de la parte inferior de tu perfil del juego donde se ve el número y pone `TOTAL XP`. Contesta a ese mensaje y pon `/exp` para que Oak reconozca el número de experiencia total.
+
+| Comando | Descripción |
+|---------|-------------|
+| `Registrar medallas` | Comienza el proceso de validación de medallas |
+| `Listo` | Termina el proceso de validación de medallas (una vez iniciado) |
+| `/exp` | Registra la experiencia (contestando a una captura de pantalla donde se vea la experiencia) |
+
+## Moderación de usuarios<a name="section4">
+
+### Echar o banear a un usuario<a name="section41">
+
+Para echar a un usuario de un grupo, puedes usar el comando `/kick`. En principio el usuario puede volver a entrar, a no ser que no pueda entrar por otro motivo ([lista negra de usuarios](#section14), [requerir validación](#section13), [grupos exclusivos de color](#section22)...).
+
+Para marcar como baneado a un usuario, esté o no en el grupo actualmente, puedes usar el comando `/ban`. Esto lo añadirá a la lista de usuarios restringidos de Telegram cuando sea posible y lo expulsará del grupo. Puedes hacer la operación contraria con `/unban`.
+
+Los tres comandos `/kick`, `/ban` y `/unban` pueden aplicarse contestando a un mensaje (puede ser un mensaje reenviado) o especificando el ID numérico de Telegram como argumento. No acepta nombres de usuario de Telegram ni de Pokémon GO.
+
+| Comando | Descripción |
+|---------|-------------|
+| `/kick` | Expulsa a un usuario de un grupo, puede volver a entrar (contestando a un mensaje suyo o pasando como parámetro el ID numérico de Telegram) |
+| `/ban` | Restringe permanentemente a un usuario y no puede volver a entrar (contestando a un mensaje suyo o pasando como parámetro el ID numérico de Telegram) |
+| `/unban` | Elimina la restricción a un usuario puesta con el comando `/ban` (contestando a un mensaje suyo o pasando como parámetro el ID numérico de Telegram) |
+
+### Echar a grupos de usuarios<a name="section42">
+
+Se pueden echar a grupos de usuarios en función de varios criterios que tiene definidos. Algunos de estos comandos reciben parámetros:
+
+| Comando | Descripción |
+| ------- | ------------|
+| `/kickold DIAS` | Expulsa a los usuarios que no han hablado en los últimos 15 días, o los días especificados en el parámetro. Por ejemplo, `/kickold 20`. |
+| `/kickmsg MENSAJES` | Expulsa a los usuarios que hayan enviado menos de 10 mensajes, o el número de mensajes especificados en el parámetro. Por ejemplo, `/kickmsg 5` |
+| `/kickuv` | Expulsa a los usuarios registrados que no estén correctamente validados |
+| `/kickblack` | Expulsa a los usuarios registrados que incumplan los criterios de la [lista negra de usuarios](#section14) que tenga configurada el canal. |
+| `/kickteam TEAM` | Expulsa a todos los usuarios registrados excepto los del equipo seleccionado (`R` para rojo, `B` para azul o `Y` para amarillo). Por ejemplo, `/kickteam Y` para expulsar a todos menos los del equipo amarillo. |
+
+Todos estos comandos son potencialmente destructivos, así que **requieren una aprobación** de un administrador del Profesor Oak, que puede permitir o denegar la petición.
+
+## Utilidades de Oak para usuarios<a name="section5">
+
+### Organización de incursiones<a name="section51">
 
 Para organizar una incursión, escribe un mensaje como el siguiente:
 `Crear incursión de Lapras a las 14:30 en Un lugar muy especial` o `Crear raid de Lapras a las 14:30 en Un lugar muy especial`.
@@ -144,7 +254,7 @@ Los siguientes mensajes **no funcionarán**:
  |--------------------------------------------------|-------------|
  | `crear incursión de POKEMON a las HORA en LUGAR` | Crea la incursión de `POKEMON` a las `HORA` (obligatorio formato _XX:XX_) en `LUGAR` |
 
-## Lista de nidos<a name="section4">
+### Lista de nidos<a name="section52">
 
 Oak mantiene una lista de nidos de Pokémon. Para añadir un nido a la lista, escribe `confirmar nido de Scyther en la alameda`.
 
