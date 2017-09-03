@@ -148,8 +148,8 @@ Las posibles contestaciones de Oak son:
 | `No sé quién es 201760961` | No registrado | El usuario no está registrado en Oak. Debe [registrarse](#section32). |
 | `No sé como se llama, sólo sé que es Amarillo L1. ⚠️` | Registro parcial | Oak le ha preguntado de qué equipo es al entrar en un canal, ha contestado, pero cuando le ha preguntado por el nombre en el juego no lo ha hecho. También debe [registrarse](#section32). |
 | `@PokemonPlayer, es Azul L34. ⚠️` | No validado | Está registrado, pero no validado. Debe [validarse](#section33). |
-| `@PokemonPlayer, es Azul L34. ⚠️🕑` | En proceso de validación | Está registrado y está en proceso de validación. Debe esperar a que un moderador lo valide o lo rechace.. |
-| `@PokemonPlayer, es Azul L34. ✅` | Validado | Está registrado y está en proceso de validación. Debe esperar a que un moderador lo valide o lo rechace. |
+| `@PokemonPlayer, es Azul L34. ⚠️🕑` | En proceso de validación | Está registrado y está en proceso de validación. Debe esperar a que un moderador lo valide o lo rechace. |
+| `@PokemonPlayer, es Azul L34. ✅` | Validado | Está registrado y validado. |
 
 Acompañando, pueden encontrarse además distintos _flags_ en forma de emojis asociados a usuarios problemáticos o tramposos (ver sección [lista negra de usuarios](#section14)) o algunos otros:
 
@@ -158,42 +158,42 @@ Acompañando, pueden encontrarse además distintos _flags_ en forma de emojis as
 | `donator` | 💶 | Ha hecho una donación al creador del Profesor Oak |
 | `authorized` | ⭐️ | Es administrador del Profesor Oak |
 | `helper` | 🔰 | Es un ayudante oficial del Profesor Oak |
-| `gay` | 🏳️‍🌈 | Es un ayudante oficial del Profesor Oak |
+| `gay` | 🏳️‍🌈 | Pertenece al colectivo LGTB |
 | `enlightened` | 🐸 | Pertenece al equipo Iluminados en Ingress |
 | `resistance` | 🗝 | Pertenece al equipo Resistencia en Ingress |
 
 ### Registro<a name="section32">
 
-Al entrar un usuario nuevo al canal que no esté registrado, Oak le preguntará por este orden de qué equipo es y cómo se llama en el juego. Si lo hace correctamente, estará ya registrado y podrá comenzar la [validación](#section33).
+Al entrar un usuario nuevo al canal que no esté registrado, Oak le preguntará por este orden de qué equipo es y cómo se llama en el juego. Si contesta correctamente, estará ya registrado y podrá comenzar la [validación](#section33).
 
-Si no lo has hecho o completado correctamente en su momento, debes hablar con Oak por privado y usar el comando `/register` para completar el registro.
+Si no lo ha completado correctamente en su momento, debe [hablar con Oak por privado](https://t.me/profesoroak_bot) y usar el comando `/register` para completar el registro.
 
 ### Validación<a name="section33">
 
 Los usuarios registrados pueden validarse. Los usuarios no registrados deben [registrarse antes](#section32).
 
-Debes hablar con Oak por privado y decir `Quiero validarme` y seguir los pasos. Deberás completar la información de tu nivel y después enviarle una captura del juego según sus indicaciones.
+El usuario debe [hablar con Oak por privado](https://t.me/profesoroak_bot) y decir `Quiero validarme` y seguir los pasos. Deberá completar la información que solicite y después enviar una captura del juego según sus indicaciones.
 
-El proceso de validación puede tardar varias horas, así que ten paciencia. Es posible que en ese momento la cola de moderación esté saturada y recibas un mensaje de que
+El proceso de validación puede tardar varias horas. Tambnién es posible que en ese momento la cola de moderación esté saturada y recibas un mensaje de que no es posible validarse en ese momento. En ese caso, debe volver a intentarse en unas horas.
 
 ### Subir de nivel<a name="section34">
 
-Para comunicar a Oak que has subido de nivel puedes decirle por privado `Oak, ya soy nivel 32`. Para confirmar que lo ha entendido, pregunta `Oak, quién soy?`.
+Para comunicar a Oak que has subido de nivel puedes [decirle por privado](https://t.me/profesoroak_bot) `Oak, ya soy nivel 32`. Para confirmar que lo ha entendido, pregunta `Oak, quién soy?`.
 
-A partir del nivel 35 es obligatorio enviar una captura de pantalla del perfil para certificar que has subido de nivel. Oak te la pedirá, pero si no lo hace y no subes de nivel al preguntarle `Quién soy?`, envíasela igualmente.
+A partir del nivel 35 es obligatorio **enviar una captura de pantalla** del perfil para certificar que has subido de nivel. Oak te la pedirá, pero si no lo hace y no has subido de nivel al preguntarle `Quién soy?`, envíasela igualmente.
 
 ### Registrar medallas y experiencia<a name="section35">
 
-Las medallas y experiencia serán visibles en tu perfil público del Profesor Oak, que puede consultar cualquiera preguntando al Profesor Oak quién eres.
+Las medallas y experiencia serán visibles en el perfil público del Profesor Oak, que puede consultar cualquiera preguntando al Profesor Oak quién es el usuario.
 
-Para registrar las **medallas del juego** dile a Oak por privado `Registrar medallas`. Una vez te conteste, recibirás instrucciones sobre cómo hacerlo:
+Para registrar las **medallas del juego** hay que decirle a Oak por privado `Registrar medallas`. Una vez conteste, se enviarán instrucciones sobre cómo hacerlo:
 
-1. Envía una captura de pantalla de la medalla como una imagen (no como archivo) y espera a que la reconozca.
-2. Comprueba que reconoce la medalla correcta. Si reconoce la medalla incorrecta o no reconoce ninguna medalla, prueba a hacer la captura de nuevo.
-3. Cuando te lo solicite, escribe los puntos actuales de la medalla sin puntos ni comas de separación en los miles, por ejemplo: `3480`.
-4. Cuando te conteste que está guardada, puedes seguir enviando más medallas siguiendo los pasos 2 y 3 o, cuando acabes, decir `Listo`.
+1. Enviar una captura de pantalla de la medalla como una imagen (no como archivo) y esperar a que la reconozca.
+2. Comprobar que reconoce la medalla correcta. Si reconoce la medalla incorrecta o no reconoce ninguna medalla, se puede probar a hacer la captura de nuevo.
+3. Cuando lo solicite, escribir los puntos actuales de la medalla, sin puntos ni comas de separación en los miles, por ejemplo: `3480`.
+4. Cuand conteste que está guardada, se pueden seguir enviando más medallas siguiendo los pasos 2 y 3 o decir `Listo` cuando se haya terminado.
 
-Para registrar la **experiencia total**, debes enviar como imagen una captura de la parte inferior de tu perfil del juego donde se ve el número y pone `TOTAL XP`. Contesta a ese mensaje y pon `/exp` para que Oak reconozca el número de experiencia total.
+Para registrar la **experiencia total**, se debe enviar como imagen una captura de la parte inferior del perfil del juego donde se vea el número total de experiencia (`TOTAL XP`). Una vez enviada, hay que contestar a ese mensaje con el comando `/exp` para que Oak reconozca el número de experiencia total.
 
 | Comando | Descripción |
 |---------|-------------|
