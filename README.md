@@ -117,7 +117,7 @@ Para crear grupos exclusivos de color debes seguir los siguientes pasos:
 
 Puedes repetir este proceso para cada uno de los grupos de color. Los pasos del 1 al 7 puede hacerlos la persona que cree el grupo de color y después puede pasarle el mensaje para emparejar el grupo al administrador del grupo general para que realice el último paso.
 
-Si preguntas `Oak, link del grupo COLOR` (por ejemplo `Oak, link del grupo rojo`) Oak enviará el enlace por privado. (Nota: actualmente no están llegando los enlaces por el bug duhow/ProfesorOak#314).
+Si preguntas `Oak, link del grupo COLOR` (por ejemplo `Oak, link del grupo rojo`) Oak enviará el enlace por privado.
 
 ### Grupo de administración<a name="section22">
 
