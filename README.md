@@ -5,11 +5,12 @@ Este es un esfuerzo para intentar documentar el uso del bot del Profesor Oak par
 ## Índice
 
 1. [Configuración del grupo](#section1)
-    1. [Ver configuración actual](#secion11)
+    1. [Ver configuración actual](#section11)
     2. [Configuración rápida](#section12)
     3. [Configuración avanzada](#section13)
-    4. [Lista negra de usuarios](#section14)
-    5. [Saludo y normas del grupo](#section15)
+    3. [Configuración. Otros](#section14)
+    5. [Lista negra de usuarios](#section15)
+    6. [Saludo y normas del grupo](#section16)
 2. [Grupos relacionados](#section2)
     1. [Grupos exclusivos de color](#section21)
     2. [Grupo de administración](#section22)
@@ -61,10 +62,21 @@ Una vez establecido un modo de partida, puedes cambiar las opciones una a una pa
 | `/set require_verified on` | Activa el aviso de que es obligatorio estar validado |
 | `/set require_verified_kick on` | Activa la expulsión automática a quien no esté validado |
 | `/set shutup on` | Activa el modo silencioso |
+| `/set team_exclusive RED` | Configurar un grupo de color exclusivo [B/R/Y] (blue, red, yellow)|
+| `/set team_exclusive_kick on` | Expulsa a los usuarios que sean de distinto color
+| `/set limit_join on` | Cierra el grupo a nuevos usuarios. Cualquier usuario nuevo será baneado
 
 Oak no contesta nada cuando pones estos comandos. Tras ponerlos, vuelve a [comprobar la configuración actual](#secion11) para asegurarte de que se han aplicado los cambios.
 
-### Lista negra de usuarios<a name="section14">
+### Configuración. Otros<a name="section14">
+
+| Comando | Descripción |
+|---------|-------------|
+| `/set location COORD_LAT,COORD_LONG` | Determina la ubicación del grupo |
+| `/set location_radius 5000`     | Radio en metros que abarca la ubicación |
+
+
+### Lista negra de usuarios<a name="section15">
 
 Los usuarios registrados pueden estar marcados con distintos _flags_ que aparecerán al preguntar a Oak quién es un usuario. Los flags existentes son los siguientes:
 
@@ -87,7 +99,7 @@ Se puede establecer una lista negra personalizada con el comando `/blacklist`, p
 | `/set blacklist fly,hacks,rager` | Impide entrar a violentos, usuarios de fly y hacks |
 | `/set blacklist off`     | Borra la lista negra |
 
-### Saludo y normas del grupo<a name="section15">
+### Saludo y normas del grupo<a name="section16">
 
 Si tienes activado el **mensaje de bienvenida** ([ver configuración avanzada](#section13)), puedes cambiar el mensaje que mostrará Oak a los nuevos usuarios que entren al canal. Escribe `editar mensaje de bienvenida` y Oak te preguntará el nuevo mensaje.
 
