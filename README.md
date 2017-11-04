@@ -62,6 +62,9 @@ Una vez establecido un modo de partida, puedes cambiar las opciones una a una pa
 | `/set require_verified on` | Activa el aviso de que es obligatorio estar validado |
 | `/set require_verified_kick on` | Activa la expulsión automática a quien no esté validado |
 | `/set shutup on` | Activa el modo silencioso |
+| `/set team_exclusive RED` | Configurar un grupo de color exclusivo [B/R/Y] (blue, red, yellow)|
+| `/set team_exclusive_kick on` | Expulsa a los usuarios que sean de distinto color
+| `/set limit_join on` | Cierra el grupo a nuevos usuarios. Cualquier usuario nuevo será baneado
 
 Oak no contesta nada cuando pones estos comandos. Tras ponerlos, vuelve a [comprobar la configuración actual](#secion11) para asegurarte de que se han aplicado los cambios.
 
@@ -70,13 +73,8 @@ Oak no contesta nada cuando pones estos comandos. Tras ponerlos, vuelve a [compr
 | Comando | Descripción |
 |---------|-------------|
 | `/set location COORD_LAT,COORD_LONG` | Determina la ubicación del grupo |
-| `/set location_radius [5000]`     | Radio en metros que abarca la ubicación |
-| `/set jokes on` | Activa las bromas |
-| `/set pokegram on` | Activa el Pokégram |
-| `/set announce_welcome on` | Activa el mensaje de bienvenida |
-| `/set require_verified on` | Activa el aviso de que es obligatorio estar validado |
-| `/set require_verified_kick on` | Activa la expulsión automática a quien no esté validado |
-| `/set shutup on` | Activa el modo silencioso |
+| `/set location_radius 5000`     | Radio en metros que abarca la ubicación |
+
 
 ### Lista negra de usuarios<a name="section15">
 
