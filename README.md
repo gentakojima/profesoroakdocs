@@ -281,9 +281,9 @@ Los siguientes mensajes **no funcionarán**:
 
 Oak mantiene una lista de nidos de Pokémon. Para añadir un nido a la lista, escribe `confirmar nido de Scyther en la alameda`.
 
-Para consultar los Pokémon que están en la lista, escribe `lista de nidos`. Puedes preguntar por un Pokémon en concreto, por ejemplo: `dónde hay scyther?` o `dónde sale scyther?`. Es obligatorio poner la **interrogación al final**.
+Para consultar los Pokémon que están en la lista, escribe `lista de nidos`. Puedes preguntar por un Pokémon en concreto, por ejemplo: `dónde hay scyther?` o `dónde sale scyther?`. Es obligatorio poner la **interrogación al final**. Para que este comando funcione, el que lo escribe necesita haber escrito 7 mensajes o haber estado al menos 4 días en el grupo.
 
-También puedes preguntar la lista completa con sus localizaciones, escribiendo `lista completa de nidos`.
+También puedes preguntar la lista completa con sus localizaciones, escribiendo `lista completa de nidos`. Para que este comando funcione, el que lo escribe necesita haber estado al menos 14 días en el grupo.
 
 Puedes borrar un nido escribiendo `borrar nido de Scyther en la alameda`.
 
@@ -296,3 +296,4 @@ La lista **se reinicia automáticamente** cuando esté previsto que cambien los 
 | `dónde hay POKEMON?`     | Pregunta la localización del nido del `POKEMON` |
 | `lista de nidos`     | Pregunta la lista de Pokémon añadidos |
 | `lista de nidos completa`     | Pregunta la lista completa de Pokémon añadidos con sus localizaciones |
+
