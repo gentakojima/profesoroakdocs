@@ -84,7 +84,7 @@ Los usuarios registrados pueden estar marcados con distintos _flags_ que aparece
 |---------|-------------|----|-------------------------|
 | `spam` | 📨 | Spammer por poner enlaces sin hablar antes en un canal | `inicial` `silenciosa` `exclusiva` |
 | `rager` | 🔥 | Violento | `inicial` `silenciosa` `exclusiva` |
-| `troll` | 👺 | Troll | `inicial` `silenciosa` `exclusiva` |
+| `troll` | 🃏 | Troll | `inicial` `silenciosa` `exclusiva` |
 | `gps` | 📡 | ? | `exclusiva` |
 | `hacks` | 💻 | Utiliza hacks o trampas en el juego | `exclusiva` |
 | `fly` | 🕹 | Utiliza fly en el juego | `exclusiva` |
