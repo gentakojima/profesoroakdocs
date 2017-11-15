@@ -252,7 +252,7 @@ Se pueden echar a grupos de usuarios en función de varios criterios predefinido
 | `/kickmsg MENSAJES` | Expulsa a los usuarios que hayan enviado menos de 10 mensajes, o el número de mensajes especificados en el parámetro. Por ejemplo, `/kickmsg 5` |
 | `/kickuv` | Expulsa a los usuarios registrados que no estén correctamente validados |
 | `/kickblack` | Expulsa a los usuarios registrados que incumplan los criterios de la [lista negra de usuarios](#section14) que tenga configurada el canal. |
-| `/kickteam TEAM` | Expulsa a todos los usuarios registrados excepto los del equipo seleccionado (`R` para rojo, `B` para azul o `Y` para amarillo). Por ejemplo, `/kickteam Y` para expulsar a todos menos los del equipo amarillo. |
+| `/kickteam TEAM` | Expulsa a todos los usuarios registrados del equipo `TEAM` (`R` para rojo, `B` para azul o `Y` para amarillo). Por ejemplo, `/kickteam Y` para expulsar a los del equipo amarillo. |
 
 Todos estos comandos son potencialmente destructivos, así que **requieren una aprobación** de un administrador del Profesor Oak, que puede permitir o denegar la petición.
 
