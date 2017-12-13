@@ -61,6 +61,7 @@ Una vez establecido un modo de partida, puedes cambiar las opciones una a una pa
 | `/set announce_welcome on` | Activa el mensaje de bienvenida |
 | `/set require_verified on` | Activa el aviso de que es obligatorio estar validado |
 | `/set require_verified_kick on` | Activa la expulsión automática a quien no esté validado |
+| `/set antiafk 5-60` | Activa la expulsión automática a quien no hable en 5-60 minutos (desactivar con `off`) |
 | `/set shutup on` | Activa el modo silencioso |
 | `/set team_exclusive RED` | Configurar un grupo de color exclusivo [B/R/Y] (blue, red, yellow)|
 | `/set team_exclusive_kick on` | Expulsa a los usuarios que sean de distinto color
